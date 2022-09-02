@@ -32,20 +32,31 @@ public class Main {
                 System.out.print(", ");
             }
         }
-        System.out.println( );
+        System.out.println();
         for (int i = Box.length - 1; i > 0; i--) {
             System.out.print(Box[i] + ", ");
         }
         System.out.println(Box[0]);
 
-        System.out.println( );
+        System.out.println();
         for (int i = arrayBox.length - 1; i > 0; i--) {
             System.out.print(arrayBox[i] + ", ");
         }
-        System.out.println(arrayBox[0]); System.out.println( );
+        System.out.println(arrayBox[0]);
+        System.out.println();
 
         for (int i = arrayBig.length - 1; i > 0; i--) {
             System.out.print(arrayBig[i] + ", ");
         }
         System.out.println(arrayBig[0]);
-    }}
+
+        System.out.println();
+        for (int i = 0; i < Box.length; i++) {
+            if (Box[i] % 2 != 0) {
+                Box[i]++;
+            }
+            System.out.print(Box[i] + ", ");
+        }
+    }
+
+}
